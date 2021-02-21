@@ -37,7 +37,7 @@ export default function validateForm() {
     e.preventDefault();
     const $response = d.querySelector(".contact__form-response");
 
-    fetch("https://formsubmit.co/ajax/franciscodemerida@gmail.com", {
+    fetch("https://formsubmit.co/ajax/fcomaranguas@gmail.com", {
       method: "POST",
       body: new FormData(e.target),
     })
