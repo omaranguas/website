@@ -12,7 +12,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
   validateForm();
 
   const scrollReveal = ScrollReveal({
-    origin: "top",
+    origin: "left",
     distance: "100px",
     duration: 1000,
     reset: true,
@@ -22,9 +22,9 @@ d.addEventListener("DOMContentLoaded", (e) => {
     `.section__title, .section__subtitle,
       .home__data, .home__img, .home__social,
       .about__data, .about__img, 
-      .skills__header, .skills__data, .skills__img,
+      .skills__header, .skills__content,
       .portfolio__img,
-      .education__content, .education__img,
+      .education__content,
       .contact__box, .contact__input, .button,
       .footer__container, .footer__social
       `,

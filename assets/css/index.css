@@ -6,8 +6,8 @@
   --header-height: 3rem;
 
   /* Colors */
-  --firts-color: #9a031e;
-  --firts-color-alt: #ef233c;
+  --firts-color: #153e90;
+  --firts-color-alt: #0e49b5;
   --title-color: #393939;
   --text-color: #707070;
   --text-color-light: #a6a6a6;
@@ -581,7 +581,7 @@ body.dark-theme {
 .contact__input {
   border: none;
   border-radius: 0.5rem;
-  color: var(--text-color);
+  color: #333;
   margin-bottom: var(--mb-1);
   font-weight: var(--font-medium);
   padding: 1rem;
@@ -691,6 +691,10 @@ textarea {
 }
 
 @media screen and (min-width: 768px) {
+  body {
+    margin: 0;
+  }
+
   .section {
     padding-top: 5rem;
   }
@@ -720,6 +724,10 @@ textarea {
   .change-theme {
     margin-left: var(--mb-2);
     position: initial;
+  }
+
+  .home {
+    padding-top: 8rem;
   }
 
   .home__submit {
