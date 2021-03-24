@@ -5,14 +5,23 @@ import menuToggle from "./toggle_menu.js";
 
 const d = document;
 
+window.addEventListener('load', (e) => {
+  const $loader = d.getElementById('loading');
+  setTimeout(() => {
+    d.body.removeChild($loader);
+    d.getElementById('content').classList.remove('hidden');
+  }, 3000);
+
+});
+
 d.addEventListener("DOMContentLoaded", (e) => {
   menuToggle("nav-menu", "nav-toggle");
   activeLink();
   hideScrollButtonAndHeader("scroll-top");
   validateForm();
 
-  const scrollReveal = ScrollReveal({
-    origin: "left",
+  /* const scrollReveal = ScrollReveal({
+    origin: "top",
     distance: "100px",
     duration: 1000,
     reset: true,
@@ -31,7 +40,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
     {
       interval: 200,
     }
-  );
+  ); */
 });
 
 changeTheme();
